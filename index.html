@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هتل آریا ارومیه - تجربه اقامت لوکس</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/normaliz.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Global Cursor -->
+  <div class="global-cursor" id="globalCursor"></div>
+  
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+  
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="neon-light"></div>
+    <div class="nav-brand">
+      <h1>هتل آریا ارومیه</h1>
+      <div class="brand-glow"></div>
+    </div>
+    <div class="nav-links">
+      <a href="../html/index.html" class="nav-link active">خانه</a>
+      <a href="../html/about.html" class="nav-link">درباره ما</a>
+      <a href="rezerv.html" class="nav-link">رزرو</a>
+      <a href="contact.html" class="nav-link">تماس با ما</a>
+    </div>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <div class="floating-elements">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+      </div>
+    </div>
+    
+    <div class="hero-content" data-animate>
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">هتل آریا</span>
+          <span class="title-line color">ارومیه</span>
+        </h1>
+        <p class="hero-description">
+          تجربه اقامت لوکس و بی‌نظیر در قلب ارومیه. هتل آریا با امکانات مدرن و خدمات حرفه‌ای، 
+          میزبانی گرم و صمیمی از مهمانان گرامی را تضمین می‌کند.
+        </p>
+        <div class="hero-buttons">
+          <a href="../html/about.html" class="btn btn-primary">
+            <span>درباره ما</span>
+            <div class="btn-glow"></div>
+          </a>
+          <a href="rezerv.html" class="btn btn-secondary">
+            <span>رزرو آنلاین</span>
+            <div class="btn-glow"></div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-stats" data-animate>
+        <div class="stat-item">
+          <div class="stat-number" data-count="150">0</div>
+          <div class="stat-label">اتاق لوکس</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="24">0</div>
+          <div class="stat-label">ساعت خدمات</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label">ستاره</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>اسکرول کنید</span>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 class="section-title">امکانات ویژه</h2>
+        <p class="section-subtitle">آنچه هتل آریا را منحصر به فرد می‌کند</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>🏨</span>
+          </div>
+          <h3>اتاق‌های لوکس</h3>
+          <p>اتاق‌های مجهز با امکانات مدرن و طراحی زیبا</p>
+        </div>
+        
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>🍽️</span>
+          </div>
+          <h3>رستوران مجلل</h3>
+          <p>سرو انواع غذاهای ایرانی و بین‌المللی</p>
+        </div>
+        
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>🏊</span>
+          </div>
+          <h3>استخر و اسپا</h3>
+          <p>امکانات تفریحی و آرامش‌بخش</p>
+        </div>
+        
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>🚗</span>
+          </div>
+          <h3>پارکینگ رایگان</h3>
+          <p>پارکینگ امن و رایگان برای مهمانان</p>
+        </div>
+        
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>📶</span>
+          </div>
+          <h3>وای‌فای رایگان</h3>
+          <p>اینترنت پرسرعت در تمام نقاط هتل</p>
+        </div>
+        
+        <div class="feature-card" data-animate>
+          <div class="feature-icon">
+            <div class="icon-glow"></div>
+            <span>🎯</span>
+          </div>
+          <h3>خدمات ۲۴ ساعته</h3>
+          <p>پرسنل مجرب آماده خدمت‌رسانی</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 class="section-title">گالری تصاویر</h2>
+        <p class="section-subtitle">نگاهی به زیبایی‌های هتل آریا</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item" data-animate>
+          <div class="gallery-image">
+            <img src="../image/pool-box.jpg" alt="استخر هتل">
+            <div class="gallery-overlay">
+              <div class="gallery-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-animate>
+          <div class="gallery-image">
+            <img src="../image/download.jfif" alt="اتاق هتل">
+            <div class="gallery-overlay">
+              <div class="gallery-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-animate>
+          <div class="gallery-image">
+            <img src="../image/download (1).jfif" alt="رستوران هتل">
+            <div class="gallery-overlay">
+              <div class="gallery-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-animate>
+          <div class="gallery-image">
+            <img src="../image/download (2).jfif" alt="لابی هتل">
+            <div class="gallery-overlay">
+              <div class="gallery-icon">🔍</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <h2 class="section-title">نظرات مهمانان</h2>
+        <p class="section-subtitle">تجربه مهمانان ما از اقامت در هتل آریا</p>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial-item active" data-animate>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "اقامت فوق‌العاده‌ای در هتل آریا داشتم. خدمات عالی و پرسنل بسیار مهربان."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">احمد محمدی</div>
+              <div class="author-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-item" data-animate>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "اتاق‌ها بسیار تمیز و مجهز بودند. رستوران هتل غذاهای خوشمزه‌ای داشت."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">فاطمه احمدی</div>
+              <div class="author-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-item" data-animate>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "موقعیت عالی هتل و دسترسی آسان به مراکز خرید و دیدنی‌های شهر."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">علی رضایی</div>
+              <div class="author-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>هتل آریا ارومیه</h3>
+          <p>تجربه اقامت لوکس و بی‌نظیر در قلب ارومیه</p>
+          <div class="social-links">
+            <a href="#" class="social-link">📱</a>
+            <a href="#" class="social-link">📧</a>
+            <a href="#" class="social-link">🌐</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>لینک‌های مفید</h4>
+          <ul>
+            <li><a href="../html/about.html">درباره ما</a></li>
+            <li><a href="rezerv.html">رزرو آنلاین</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>📞 09394186595</p>
+          <p>📧 info@hotelaria.com</p>
+          <p>📍 ارومیه، خیابان امام، هتل آریا</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 1404 هتل آریا ارومیه. تمامی حقوق محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/scri.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/ani.js"></script>
+</body>
+</html>

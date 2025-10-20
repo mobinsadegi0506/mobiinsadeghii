@@ -1,0 +1,105 @@
+    body {
+      margin: 0;
+      font-family: 'Vazir', sans-serif;
+      direction: rtl;
+      background-color: #000;
+      color: #00ff00;
+    }
+
+    /* نوار بالا */
+    .navbar {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #000;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+      overflow: hidden;
+      z-index: 100;
+    }
+
+    .navbar h1 {
+      font-size: 20px;
+      color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+      letter-spacing: 2px;
+      z-index: 101;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      z-index: 101;
+    }
+
+    .nav-links a {
+      color: #00ff00;
+      text-decoration: none;
+      position: relative;
+      padding: 5px 10px;
+      text-shadow: 0 0 8px #00ff00;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #00ff00;
+      box-shadow: 0 0 5px #00ff00;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* دایره دنبال‌کننده موس روی منو */
+    .cursor-circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(0, 255, 0, 0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 10px #00ff00;
+      z-index: 102;
+    }
+
+    /* چراغ چشمک‌زن پشت منو */
+    .neon-light {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0,255,0,0.2) 0%, transparent 70%);
+      animation: blink 2s infinite;
+      z-index: 99;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.6; }
+    }
+        /* دایره دنبال‌کننده موس در کل سایت */
+.global-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 255, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #00ff00;
+  z-index: 9999;
+}
+.abot{
+  color: #fff;
+}
